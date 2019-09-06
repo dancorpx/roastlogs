@@ -1,1 +1,30 @@
-test
+<br/>
+<div class="container">
+    <center><h2>Roast Logs</h2></center>
+    <br/>
+    <table class="table table-hover">
+    <thead>
+        <tr>
+        <th scope="col">Batch #</th>
+        <th scope="col">Date</th>
+        <th scope="col">Bean</th>
+        <th scope="col">Roasting Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @roasts.each do |roast| %>
+        <tr>
+        <th scope="row"><%= roast.id %></th>
+        <td><%= roast.date %></td>
+        <td><%= roast.beans %></td>
+        <td><%= roast.roast_notes %></td>
+        <td><%= link_to 'Open', roast_path(roast), class: "btn btn-primary" %></td>
+        </tr>
+        
+        
+    <% end %>
+    </tbody>
+    </table>
+<br/>
+<%= link_to 'New Roast', new_roast_path, class: "btn btn-success" %>
+</div>

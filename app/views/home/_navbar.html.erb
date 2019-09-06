@@ -1,31 +1,44 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-  <a class="navbar-brand" href="#">RoastLogs</a>
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/coffee-seeds.png" %>
+  <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        
+        <%= link_to "Home", root_path, class: "nav-link" %>
+        
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Logs</a>
+        <%= link_to "Roasts", roasts_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Resources
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Roasting</a>
-          <a class="dropdown-item" href="#">Brewing</a>
+          <%= link_to "Roasting", home_roasting_path, class: "dropdown-item" %>   
+          <%= link_to "Brewing", home_brewing_path, class: "dropdown-item" %>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
     </ul>
     <% if user_signed_in? %>
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-outline-success my-2 my-sm-0" %> 
+    <li class="nav-item dropdown">
+          <%= image_tag "https://avatars3.githubusercontent.com/u/38848081?s=460&v=4", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <%= link_to "Account", edit_user_registration_path, class: "dropdown-item" %>
+            <%= link_to "Another action", "#", class: "dropdown-item" %>
+            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
     <% end %>
   </div>
 </nav>
+<br/>
+<br/>

@@ -1,0 +1,20 @@
+
+<%= simple_form_for @roast, url: roasts_path do |f| %>
+    <%= f.error_notification %>
+    <%= f.input :date %>
+    <%= f.input :beans %>
+    <%= f.input :s_weight %>
+    <%= f.input :f_weight %>
+    <%= f.input :air_temp %>
+    <%= f.input :roaster %>
+    <%= f.input :f_crack_s %>
+    <%= f.input :f_crack_e %>
+    <%= f.input :s_crack_s %>
+    <%= f.input :s_crack_e %>
+    <%= f.input :total_time %>
+    <%= f.input :cooling_time %>
+    <%= f.input :roast_notes %>
+
+    <%= f.button :submit, class: "btn-primary" %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+  <% end %>

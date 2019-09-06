@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1>Batch #<%= @roast.id %></h1> 
+        <%= link_to 'Edit', edit_roast_path(@roast), class: 'btn btn-warning' %>
+        <br/>
+        <br/>
+        <table class="table table-bordered">
+        <thead>
+          <th>Roast Date:</th>
+          <th>Beans:</th>
+          <th>Roasting Notes:</th>
+        </thead>
+        <tbody>
+        <tr>
+        <td><%= @roast.date %></td>
+        <td><%= @roast.beans %></td>
+        <td><%= @roast.roast_notes %></td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+  </div>
+  
+</div>
