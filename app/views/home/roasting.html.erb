@@ -1,1 +1,8 @@
-<h1>Roasting guides</h1>
+<center><h1>Roasting Resources</h1></center>
+
+<% @items.each do |item| %>
+    <br/><%= item.title %><br/>
+    <%= item.link %><br/>
+    <%= item.content %><br/>
+    <%= link_to 'Open', item_path(item), class: "btn btn-primary" %>
+<% end %>

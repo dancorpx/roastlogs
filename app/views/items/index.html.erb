@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1>Roasting Notes</h1>
+            <h6>Post any useful information you find about roasters</h6>
+            <br/>
+            <% @items.each do |item| %>
+                <br/>
+                <h2><%= item.title %></h2>
+                <%= item.content %><br/>
+                <a href="<%= item.link %>" target="_blank">Go to page</a><br/><br/>
+                <%= link_to 'Edit', edit_item_path(item), class: "btn btn-warning" %><br/>
+            <% end %>
+            <br/>
+            <br/>
+            <%= link_to 'New Note', new_item_path, class: "btn btn-primary" %>
+        </div>
+    </div>
+</div>
