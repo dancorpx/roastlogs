@@ -4,13 +4,27 @@
             <h1>Roasting Notes</h1>
             <h6>Post any useful information you find about roasters</h6>
             <br/>
-            <%= link_to 'New Note', new_item_path, class: "btn btn-primary", style: "position: relative;
+            <div class="form-group">
+                <%= simple_form_for :search, url: items_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+                    <%= f.input :title, input_html: {value: ""} %> 
+                    <%= f.submit "Search", class: "btn btn-primary" %>
+                <% end %>
+            </div>
+            <br/>
+            <br/>
+            <%= link_to 'New Note', new_item_path, class: "btn btn-success", style: "position: relative;
                 bottom: 20px; right: 0px;" %>
-            <% @items.each do |item| %>
+                
+                <% @items.each do |item| %>
                 <br/>
                 <h2><%= item.title %></h2>
                 <%= item.content %><br/>
-                <a href="<%= item.link %>" target="_blank">Go to page</a><br/><br/>
+                <a href="<%= item.link %>" target="_blank">Go to page</a><br/>
+                <p class="text-muted">
+                    <small>
+                        Posted on <%= item.created_at.to_formatted_s(:long) %>
+                    </small>
+                </p>               
                 <%= link_to 'Edit', edit_item_path(item), class: "btn btn-warning" %><br/>
             <% end %>
             <br/>

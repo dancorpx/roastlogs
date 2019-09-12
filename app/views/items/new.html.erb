@@ -1,10 +1,14 @@
 <div class="container">
-<center><h1>New item time!</h1></center>
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+  <center><h1>New note!</h1></center>
 
-<%= render 'form', roast: @item %>
-<br/>
-<br/>
-<%= link_to 'Back', items_path %>
+  <%= render 'form', roast: @item %>
+  <br/>
+  <br/>
+  <%= link_to 'Back', items_path %>
 
   <br/>
   <br/>
+  </div>
+</div>

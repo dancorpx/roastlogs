@@ -3,6 +3,11 @@ class ItemsController < ApplicationController
 
     def index
         @items = Item.all
+        @search = params["search"]
+        if @search.present?
+          @title = @search["title"]
+          @items = Item.where("title ILIKE ?", "%#{@title}%")
+        end
     end
     
     def new
