@@ -6,8 +6,8 @@
             <br/>
             <div class="form-group">
                 <%= simple_form_for :search, url: items_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-                    <%= f.input :title, input_html: {value: ""} %> 
-                    <%= f.submit "Search", class: "btn btn-primary" %>
+                    <%= f.input :title, input_html: {value: ""}, label: false %> 
+                    <%= f.submit "Search", class: "btn btn-primary", style:"margin-left: 2px;" %>
                 <% end %>
             </div>
             <br/>
