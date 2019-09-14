@@ -7,6 +7,8 @@ end
 
 def show
     @roast = Roast.find(params[:id])
+    @comments = @roast.comments.all
+    @comment = @roast.comments.build
 end
 
 def new
