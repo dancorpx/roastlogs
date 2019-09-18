@@ -9,14 +9,17 @@
           <table class="table table-bordered">
             <thead>
               <th>Roast date:</th>
+              <th>Roaster:</th>
               <th>Beans:</th>
               <th>Start weight:</th>
               <th>Finish weight:</th>
-              <th>Air temperature:</th>
+              <th>Air temp:</th>
+              <th>Drop Temp:</th>
+              <th>Turing Point:</th>
               <th>First crack start:</th>
               <th>First crack finish:</th>
-              <th>Second crack start:</th>
-              <th>Second crack finish:</th>
+              <th>End Temp:</th>
+              <th>End Heat:</th>
               <th>Total time:</th>
               <th>Cooling time:</th>
               <th>Roasting Notes:</th>
@@ -24,14 +27,17 @@
             <tbody>
               <tr>
                 <td><%= @roast.date %></td>
+                <td><%= @roast.roaster %></td>
                 <td><%= @roast.beans %></td>
                 <td><%= @roast.s_weight %></td>
                 <td><%= @roast.f_weight %></td>
                 <td><%= @roast.air_temp %></td>
+                <td><%= @roast.drop_temp %></td>
+                <td><%= @roast.turn_point %></td>
                 <td><%= @roast.f_crack_s %></td>
                 <td><%= @roast.f_crack_e %></td>
-                <td><%= @roast.s_crack_s %></td>
-                <td><%= @roast.s_crack_e %></td>
+                <td><%= @roast.end_temp %></td>
+                <td><%= @roast.end_heat %></td>
                 <td><%= @roast.total_time %></td>
                 <td><%= @roast.cooling_time %></td>
                 <td><%= @roast.roast_notes %></td>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_14_101442) do
+ActiveRecord::Schema.define(version: 2019_09_18_041845) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,15 +38,17 @@ ActiveRecord::Schema.define(version: 2019_09_14_101442) do
     t.integer "f_weight"
     t.integer "air_temp"
     t.string "roaster"
-    t.time "f_crack_s"
-    t.time "f_crack_e"
-    t.time "s_crack_s"
-    t.time "s_crack_e"
-    t.time "total_time"
-    t.time "cooling_time"
+    t.string "f_crack_s"
+    t.string "f_crack_e"
+    t.string "total_time"
+    t.string "cooling_time"
     t.text "roast_notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "drop_temp"
+    t.string "turn_point"
+    t.string "end_heat"
+    t.string "end_temp"
   end
 
   create_table "users", force: :cascade do |t|

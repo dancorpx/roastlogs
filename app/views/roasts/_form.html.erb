@@ -3,14 +3,16 @@
     <%= f.error_notification %>
     <%= f.input :date %>
     <%= f.input :beans %>
-    <%= f.input :s_weight %>
-    <%= f.input :f_weight %>
+    <%= f.input :s_weight, :label => "Start Weight:"%>
+    <%= f.input :f_weight, :label => "Finish Weight:"%>
     <%= f.input :air_temp %>
     <%= f.input :roaster %>
-    <%= f.input :f_crack_s %>
-    <%= f.input :f_crack_e %>
-    <%= f.input :s_crack_s %>
-    <%= f.input :s_crack_e %>
+    <%= f.input :drop_temp %>
+    <%= f.input :turn_point %>
+    <%= f.input :f_crack_s, :label => "First crack start:" %>
+    <%= f.input :f_crack_e, :label => "First crack end:" %>
+    <%= f.input :end_temp %>
+    <%= f.input :end_heat %>
     <%= f.input :total_time %>
     <%= f.input :cooling_time %>
     <%= f.input :roast_notes %>
