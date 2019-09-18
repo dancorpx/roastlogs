@@ -1,8 +1,7 @@
 <div class="container">
     <h1><%= @item.title %></h1>
     <br/>
-    <%= @item.link %>
-    <%= @item.content %>
+    <%= render 'form', item: @item %>
     <br/>
     <%= link_to 'Delete', @item, method: :delete, data: {confirm: 'Are you sure?'}, class: "btn btn-danger"%>
 </div>
