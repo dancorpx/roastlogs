@@ -1,7 +1,8 @@
-<%= simple_form_for @item, url: items_path do |f| %>
+<%= simple_form_for (@item) do |f| %>
     <%= f.error_notification %>
     <%= f.input :title %>
     <%= f.input :link %>
     <%= f.input :content %>  
     <%= f.button :submit, class: "btn-primary" %>
+    
 <% end %>
