@@ -1,45 +1,61 @@
 <div class="container">
-  <center><h1>Brewing Guides</h1></center>
+  <div class="heading">
+    <center><h1>Brewing Guides</h1></center>
+  </div>
   <br/>
   <br/>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images//hario-v60.jpg" class="card-img-top" style="height: 15rem;" >
-        <div class="card-body">
-          <h5 class="card-title">V60 Pour Over</h5>
-          <p class="card-text">Brew Guide</p>
+  <div class="methods">
+    <div class="row">
+      <div class="col-md-3">
+      <%= link_to hario_path do %>  
+        <div class="card">
+          <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images//hario-v60.jpg" class="card-img-top" style="height: 15rem;">
+          <div class="card-body">
+            <h5 class="card-title">V60 Pour Over</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
         </div>
+        <% end %>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/Moka-Pot.jpg" class="card-img-top" style="height: 15rem;">
-        <div class="card-body">
-          <h5 class="card-title">Stove Top</h5>
-          <p class="card-text">Brew Guide</p>
+
+      <div class="col-md-3">
+      <%= link_to stovetop_path do %>
+        <div class="card">
+          <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/Moka-Pot.jpg" class="card-img-top" style="height: 15rem;">
+          <div class="card-body">
+            <h5 class="card-title">Stove Top</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
         </div>
+        <% end %>
       </div>
-    </div>
-  
-  
-    <div class="col-md-3">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/aeropress_7.webp" class="card-img-top" style="height: 15rem;">
-        <div class="card-body">
-          <h5 class="card-title">Aeropress</h5>
-          <p class="card-text">Brew Guide</p>
+    
+    
+      <div class="col-md-3">
+      <%= link_to aeropress_path do %>
+        <div class="card">
+          <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/aeropress_7.webp" class="card-img-top" style="height: 15rem;">
+          <div class="card-body">
+            <h5 class="card-title">Aeropress</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
         </div>
+        <% end %>
       </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card">
-        <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/french.png" class="card-img-top" style="height: 15rem;">
-        <div class="card-body">
-          <h5 class="card-title">French Press</h5>
-          <p class="card-text">Brew Guide</p>
+      <div class="col-md-3">
+      <%= link_to french_press_path do %>
+        <div class="card">
+          <img src="https://raw.githubusercontent.com/dancorpx/roastlogs/master/app/assets/images/french.png" class="card-img-top" style="height: 15rem;">
+          <div class="card-body">
+            <h5 class="card-title">French Press</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
         </div>
+        <% end %>
       </div>
     </div>
   </div>
 </div>
+
+
+  
