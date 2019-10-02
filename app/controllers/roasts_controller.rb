@@ -51,7 +51,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def roast_params
-      params.require(:roast).permit(:date, :beans, :s_weight, :f_weight, :air_temp, :roaster, :f_crack_s, :f_crack_e, :s_crack_s, :f_crack_e, :total_time, :cooling_time, :roast_notes, :end_temp, :end_heat, :drop_temp, :turn_point)
+      params.require(:roast).permit(:date, :beans, :s_weight, :f_weight, :air_temp, :roaster, :f_crack_s, :roast_dev, :total_time, :cooling_time, :roast_notes, :end_temp, :end_heat, :drop_temp, :turn_point)
     end
 
 end
