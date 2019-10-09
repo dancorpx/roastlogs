@@ -3,6 +3,7 @@ class RoastsController < ApplicationController
   before_action :authenticate_user!
 def index
     @roasts = Roast.all
+    @reverse = @roasts.sort.reverse
 end
 
 def show

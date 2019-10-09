@@ -15,7 +15,7 @@
             <%= link_to 'New Note', new_item_path, class: "btn btn-success", style: "position: relative;
                 bottom: 20px; right: 0px;" %>
                 
-                <% @items.each do |item| %>
+                <% @rev_items.each do |item| %>
                 <br/>
                 
                 <h2><%= item.title %></h2>

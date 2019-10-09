@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
 
     def index
         @items = Item.all
+        @rev_items = @items.sort.reverse
         @search = params["search"]
         if @search.present?
           @title = @search["title"]
