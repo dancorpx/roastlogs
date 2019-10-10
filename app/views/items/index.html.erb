@@ -16,8 +16,8 @@
                 bottom: 20px; right: 0px;" %>
                 
                 <% @rev_items.each do |item| %>
-                <br/>
-                
+                <div class="item">
+                <%= image_tag "#{item.user.avatar}", class: "avatar float-right" %>
                 <h2><%= item.title %></h2>
                 <%= simple_format item.content %>
                 <a href="<%= item.link %>" target="_blank">Go to page</a><br/>
@@ -27,7 +27,10 @@
                     </small>
                 </p>               
                 <%= link_to 'Edit', edit_item_path(item), class: "btn btn-warning" %><br/>
-            <% end %>
+                </div>
+                <% end %>
+                
+            
             <br/>
             <br/>
                 

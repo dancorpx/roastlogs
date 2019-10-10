@@ -8,10 +8,13 @@
     z-index: 2;
   }
 
-  h1 {
-      color: red;
-  }
-
 .form-required { 
     display: none; 
+}
+
+.item {
+    background-color: #E3F2FD;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 1%;
 }
