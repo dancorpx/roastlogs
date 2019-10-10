@@ -7,7 +7,7 @@ class ItemsController < ApplicationController
         @search = params["search"]
         if @search.present?
           @title = @search["title"]
-          @items = Item.where("title ILIKE ?", "%#{@title}%")
+          @rev_items = Item.where("title ILIKE ?", "%#{@title}%")
         end
     end
     
@@ -61,6 +61,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:title, :link, :content)
+      params.require(:item).permit(:title, :link, :content, :user_id)
     end
 end

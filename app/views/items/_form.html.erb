@@ -3,6 +3,7 @@
     <%= f.input :title %>
     <%= f.input :link %>
     <%= f.input :content %>  
+    <%= f.input :user_id, :input_html => {:value => current_user.id}, :as => :hidden %>
     <%= f.button :submit, class: "btn-primary" %>
     
 <% end %>
