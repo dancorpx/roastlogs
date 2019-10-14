@@ -17,7 +17,11 @@
                 
                 <% @rev_items.each do |item| %>
                 <div class="item">
-                <%= image_tag "#{item.user.avatar}", class: "avatar float-right" %>
+                    <% if item.user.avatar %>
+                        <%= image_tag "#{item.user.avatar}", class: "avatar float-right" %>
+                    <% else %>
+                        <%= image_tag "https://media1.tenor.com/images/ed2ef9bceac44da18c2eb0711df61106/tenor.gif", class: "avatar float-right" %>
+                    <% end %>
                 <h2><%= item.title %></h2>
                 <%= simple_format item.content %>
                 <a href="<%= item.link %>" target="_blank">Go to page</a><br/>
