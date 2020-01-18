@@ -1,3 +1,14 @@
 // Place all the styles related to the roasts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.heading {
+  // text-decoration-line: underline;
+  background: url(/assets/beans-heading.jpeg);
+  background-position: center;
+  height: 20vh;
+  color: white;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 0.75rem 0;
+}
