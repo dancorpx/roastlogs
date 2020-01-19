@@ -1,0 +1,95 @@
+<div class="heading">
+    <center><h1>Tasting Centre</h1></center>
+</div>
+<div class="container">
+  <br/>
+  <br/>
+  <div class="countries">
+    <div class="row">
+      <div class="col-md-3">
+      <%= link_to tasting_path(@tasting, :anchor => "africa") do %>  
+        <div class="card">
+          <%= image_tag ("http://coffeeattendant.com/wp-content/uploads/2018/04/Africa-continent.png"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">Africa</h5>
+            <p class="card-text">Flavour Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+
+      <div class="col-md-3">
+      <%= link_to tasting_path(@tasting, :anchor => "camerica") do %>
+        <div class="card">
+          <%= image_tag ("https://www.coffeeattendant.com/wp-content/uploads/2018/04/central-emrica-1.png"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">Central America</h5>
+            <p class="card-text">Flavour Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-md-3">
+      <%= link_to tasting_path(@tasting, :anchor => "samerica") do %>
+        <div class="card">
+          <%= image_tag ("http://coffeeattendant.com/wp-content/uploads/2018/04/South-America-continent.png"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">South America</h5>
+            <p class="card-text">Flavour Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-md-3">
+      <%= link_to tasting_path(@tasting, :anchor => "asia") do %>
+        <div class="card">
+          <%= image_tag ("http://coffeeattendant.com/wp-content/uploads/2018/04/Asia-continent.png"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">Asia</h5>
+            <p class="card-text">Flavour Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="africa-section">
+  <a id="africa"><h2>Africa</h2></a>
+  <p><strong>Ethiopia:</strong> Ethiopian coffee has distinct fruity flavors such as blueberry and strawberry. Floral notes such as Bergamot, Roses and Jasmine are also often found in a cup. Ethiopian coffees tend to have a high acidity, syrupy mouthfeel and can have a winey quality to it.On filter, the Ethiopian coffees get a tea-like aspect to it as well. Ethiopian coffee is considered among the best in the world.</p>
+
+  <p><strong>Kenya:</strong> Kenyan coffees often have flavors of berries, lemongrass, bergamot, black tea and tomato. The coffee can best be described as vibrant and bright and brings a complex cup to the table. The aftertaste is often described as lemony and grapefruit. On the nose a Kenyan filter coffee might offer a round tomato and black currant aroma. Kenyan coffees are also regarded as high quality coffee.</p>
+
+  <p><strong>Rwanda:</strong> Rwanda coffee will often give floral aromas such as orange blossom and lemon. The flavors consist mostly out of caramelized sugar and dates and a aftertaste of caramel. Fruity flavors such as melon and stone fruits can also often be found in a Rwanda coffee. The acidity is usually crisp and citric.</p>
+
+  <p><strong>Tanzania:</strong> Tanzanian coffee offer a bright and wine like acidity. A medium to full body is often accompanied by notes of sweet berries, fruits and sometimes a hint of cedar wood.</p>
+</div>
+
+<div class="camerica-section">
+  <a id="camerica"><h2>Central America</h2></a>
+  <p><strong>Panama:</strong> Panama is famous for its Geisha coffee and overall quality of coffee in general. Panama coffees often have a Jasmine aroma with flavours of honey and citrus fruits and bergamot. You can also often find a creamy milk chocolate finish in your cup. The Panama coffees are usually round and mild with a medium body and medium acidity.</p>
+
+  <p><strong>Costa Rica:</strong> Good Costa Rican coffees usually have a brown sugar fragrance. The flavors can be divided into apricot, brown sugar and tropical fruits. The aftertaste can bring a dark chocolate to the pallet. The round body is often accompanied with a bright acidity.</p>
+
+  <p><strong>Guatemala:</strong> Guatemalan coffees are known for their mild chocolate/cocoa flavors in the aftertaste. Often you will find a toffee flavor en a nutty aspect in the cup together with tropical fruits as well. The acidity is like that of green apples but on the bright side. Sometimes there is a floral note on the nose. Guatemalan coffees can have a full body often times.</p>
+
+  <p><strong>El Salvador:</strong> Coffees from El Salvador can show aromas and flavors of red fruit and plum. The Acidity is high, the body is medium to full. El Salvador is known for its balanced coffees but they always seem to lack strength in aroma and flavors.</p>
+
+  <p><strong>Nicaragua:</strong> Nicaragua coffees have a mild acidity and medium body smooth body. The flavours are sweet caramel, chocolate and citrus fruits. Often you can find aromas of vanilla and nuts in your cup. The flavors and aromas are rich but balanced.</p>
+
+  <p><strong>Mexico:</strong> Mexican beans are often used in blends because of their excellent blend characteristics. The better Mexican coffees have chocolate flavors and nutty notes as well. They often have a light body and acidity. You may find a dry white wine aspect to the Mexican coffee as well.</p>
+</div> 
+  
+<div class="samerica-section">
+  <a id="samerica"><h2>South America</h2></a>
+  <p><strong>Colombia:</strong> Colombia is the most famous coffee nation in the world and has many flavors to bring to the cup. Often these coffees have a medium body with aromas of chocolate and cocoa. The flavors, however, will lead you to citrus fruits, sweet tropical fruit and nutty flavors. The Acidity can best be described as bright and citric.</p>
+
+  <p><strong>Brazil:</strong> Brazilian coffees are known for their sweet nutty flavors that are accompanied by a bittersweet chocolate note. Also very common is the hint of toast and low acidity of the Brazilian beans. Because of those agreeable flavours and aromas, Brazilian coffee is often used in blends.</p>
+
+  <p><strong>Peru:</strong> Peruvian coffees can be recognized by their herbal and sweet fruity aromas, together with flavors of plum, sweet citrus fruits such a orange, and herbal notes. The coffee often has a medium to light acidity and medium body. Peruvian coffee is not a famous as their South American brethren but the coffee can be just as great.</p>
+</div>
+  
+<div class="asia-section">
+  <a id="asia"><h2>Asia</h2></a>
+  <p><strong>Indonesia:</strong> Indonesia is most famous for its Kopi Luwak coffee but they have some other nice coffees as well. Indonesian coffee is easily recognizable by its earthy flavors and aromas that are accompanied by a smokiness and notes of spices. Their full body, rich taste and lasting aftertastes make them favourable with many coffee lovers. Coffees from Papua New Guinea, Thailand and other Asian coffee producing countries are fairly the same when it comes to recognizable flavors and aromas.</p>
+</div>

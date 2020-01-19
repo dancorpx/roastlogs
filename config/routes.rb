@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   devise_for :users
   # get 'home/index'
   root 'home#index'
+  get 'tasting' => 'home#tasting'
   get "brewing" => 'home#brewing'
   get "hario" => 'home#hario'
   get "stovetop" => 'home#stovetop'
