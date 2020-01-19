@@ -23,7 +23,22 @@
 @import "config/colors";
 @import "config/bootstrap_variables";
 
+body {
+  font-family: 'raleway', sans-serif;
+  background: #F9F9F9;
+}
+
+// devise views
+#devise-jumbo {
+  background: #2C3532;
+  color: white;
+    box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0em;
+}
 .devise-background {
-  background: rgba(148, 107, 41, 1);
-  
+  background: linear-gradient(to left, #2E6466 5%, rgba(100, 100, 41, 1));
+}
+#devise-logo {
+  height: 15vh;
+  width: auto;
 }
