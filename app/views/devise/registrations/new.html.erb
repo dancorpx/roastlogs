@@ -1,6 +1,14 @@
-<div class="col-md-6 offset-md-3">
-  <div class="jumbotron" style="background-color: #e3f2fd;">
-<center><h1>Sign up</h1></center>
+<body class="devise-background">
+<br>
+<br>
+<br>
+<br>
+<center><%= image_tag "coffee-seeds.png", id: "devise-logo" %></center>
+<br>
+<br>
+<div class="col-md-4 offset-md-4">
+  <div class="jumbotron" id="devise-jumbo">
+<center><h2>Sign up</h2></center>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
@@ -9,7 +17,7 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
     <%= f.label :password %>
     <% if @minimum_password_length %>
@@ -17,17 +25,16 @@
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password", class:"form-control" %>
   </div>
-
+  <br>
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control"%>
   </div>
-
+  <br>
   <div class="actions">
     <%= f.submit "Sign up", class: 'btn btn-secondary'%>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
 </div>
 </div>

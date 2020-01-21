@@ -10,7 +10,7 @@
         <th scope="col">Batch #</th>
         <th scope="col">Date</th>
         <th scope="col">Bean</th>
-        <th scope="col">Roasting Notes</th>
+        <th class="remove" scope="col">Roasting Notes</th>
         <th scope="col"> </th>
         </tr>
     </thead>
@@ -20,7 +20,7 @@
         <th scope="row"><%= roast.id %></th>
         <td><%= roast.date %></td>
         <td><%= roast.beans %></td>
-        <td><%= roast.roast_notes %></td>
+        <td class="remove"><%= roast.roast_notes %></td>
         <td><%= link_to 'Open', roast_path(roast), class: "btn btn-primary" %></td>
         </tr>
         
