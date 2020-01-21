@@ -1,5 +1,6 @@
 .countries {
-  height: 60vh;
+  height: auto;
+  padding-bottom: 5vh;
 }
 
 img {
@@ -26,3 +27,17 @@ img {
   background-color: #37787a;
   padding: 3em;
 }
+
+.card-img-top { 
+  height: 0rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card-img-top { 
+    height: 15rem;
+  }
+}
+
+//  style: "height: 15rem;"
+//  style: "height: 15rem;"
+//  style: "height: 15rem;"
