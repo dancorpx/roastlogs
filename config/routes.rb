@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get "stovetop" => 'home#stovetop'
   get "aeropress" => 'home#aeropress'
   get "french_press" => 'home#french_press'
+  get "delter_press" => 'home#delter_press'
+  get "chemex" => 'home#chemex'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

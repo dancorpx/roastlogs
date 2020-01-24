@@ -1,13 +1,13 @@
 <div class="heading">
     <center><h1>Brewing Guides</h1></center>
-  </div>
+</div>
 <div class="container">
   
   <br/>
   <br/>
   <div class="methods">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
       <%= link_to hario_path do %>  
         <div class="card">
           <%= image_tag ("hario-v60.jpg"), class: "card-img-top", style: "height: 15rem;" %>
@@ -19,7 +19,7 @@
         <% end %>
       </div>
 
-      <div class="col-md-3">
+      <div class="col-md-4">
       <%= link_to stovetop_path do %>
         <div class="card">
           <%= image_tag ("Moka-Pot.jpg"), class: "card-img-top", style: "height: 15rem;" %>
@@ -30,9 +30,7 @@
         </div>
         <% end %>
       </div>
-    
-    
-      <div class="col-md-3">
+      <div class="col-md-4">
       <%= link_to aeropress_path do %>
         <div class="card">
           <%= image_tag ("aeropress_7.webp"), class: "card-img-top", style: "height: 15rem;" %>
@@ -43,7 +41,10 @@
         </div>
         <% end %>
       </div>
-      <div class="col-md-3">
+    </div>
+<br>
+      <div class="row">
+      <div class="col-md-4">
       <%= link_to french_press_path do %>
         <div class="card">
           <%= image_tag ("french.png"), class: "card-img-top", style: "height: 15rem;" %>
@@ -53,6 +54,29 @@
           </div>
         </div>
         <% end %>
+      </div>
+      <div class="col-md-4">
+      <%= link_to chemex_path do %>  
+        <div class="card">
+          <%= image_tag ("https://images.crateandbarrel.com/is/image/Crate/Chemex8CupCffeMkrWWdCollrSHF16/?$web_product_hero$&190411134920&wid=625&hei=625"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">Chemex</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
+      <div class="col-md-4">
+      <%= link_to delter_press_path do %>  
+        <div class="card">
+          <%= image_tag ("https://cdn.shopify.com/s/files/1/0229/4212/2061/articles/delter-coffee-press-delter-4_704x704_5ef3452e-8b77-4cd4-a84b-7585ad972359_1600x.jpg?v=1570144120"), class: "card-img-top", style: "height: 15rem;" %>
+          <div class="card-body">
+            <h5 class="card-title">Delter Press</h5>
+            <p class="card-text">Brew Guide</p>
+          </div>
+        </div>
+        <% end %>
+      </div>
       </div>
     </div>
   </div>
