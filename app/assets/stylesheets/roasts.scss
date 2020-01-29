@@ -1,10 +1,12 @@
 // Place all the styles related to the roasts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-// 
+
+// removes roast notes for small screens 
 @media only screen and (max-width: 420px) {
   .remove {
       display: none;
   }
  
 }
+

@@ -8,6 +8,7 @@
     <%= favicon_link_tag %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">
   </head>
 
   <body>
@@ -16,4 +17,5 @@
     <%= yield %>
     
   </body>
+  <script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>
 </html>

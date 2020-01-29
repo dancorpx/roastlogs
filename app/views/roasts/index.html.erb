@@ -7,14 +7,14 @@
 <%= link_to 'New Roast', new_roast_path, class: "btn btn-success" %>    
     <br>
     <br>
-    <table class="table table-hover">
+    <table data-toggle="table" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
     <thead>
         <tr>
-        <th scope="col">Batch #</th>
-        <th scope="col">Date</th>
-        <th scope="col">Bean</th>
-        <th class="remove" scope="col">Roasting Notes</th>
-        <th scope="col"> </th>
+        <th class="th-sm">Batch #</th>
+        <th class="th-sm" >Date</th>
+        <th class="th-sm" data-sortable="true">Bean</th>
+        <th class="remove th-sm">Roasting Notes</th>
+        <th class="th-sm"> </th>
         </tr>
     </thead>
     <tbody>

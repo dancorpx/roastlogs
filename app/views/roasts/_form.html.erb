@@ -1,22 +1,31 @@
 
   <%= simple_form_for(@roast) do |f| %>
     <%= f.error_notification %>
+    <div class="row">
+      <div class="col-md-3 col-12">
     <%= f.input :date %>
     <%= f.input :beans %>
     <%= f.input :s_weight, :label => "Start Weight:"%>
     <%= f.input :f_weight, :label => "Finish Weight:"%>
+    </div>
+    <div class="col-md-3 col-12">
     <%= f.input :air_temp %>
     <%= f.input :roaster %>
-    <%= f.input :drop_temp %>
-    <%= f.input :turn_point %>
+    <%= f.input :drop_temp, :label => "Charge Temp:" %>
+    <%= f.input :turn_point, :label => "Turning Point:" %>
+    </div>
+    <div class="col-md-3 col-12">
     <%= f.input :f_crack_s, :label => "First crack start:" %>
-    <%= f.input :roast_dev, :label => "Roast Dev Time" %>
+    <%= f.input :roast_dev, :label => "Dev Time" %>
     <%= f.input :end_temp %>
     <%= f.input :end_heat %>
+    </div>
+    <div class="col-md-3 col-12">
     <%= f.input :total_time %>
-    <%= f.input :cooling_time %>
     <%= f.input :roast_notes %>
-
+    </div>
+    </div>
+<br>
     <%= f.button :submit, class: "btn-primary" %>
     <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
   <% end %>
