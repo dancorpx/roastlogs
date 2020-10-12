@@ -1,0 +1,40 @@
+<div class="heading">
+    <center><h1>Green beans in Stock</h1></center>
+</div>
+<div class="container">
+<br>
+<br>
+<%= link_to 'New Green', new_stock_path, class: "btn btn-success" %>    
+    <br>
+    <br>
+    <table data-toggle="table" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th class="th-sm">Country</th>
+            <th class="th-sm">Beans</th>
+            <th class="th-sm">Process</th>
+            <th class="th-sm" >Buy Date</th>
+            <th class="th-sm" data-sortable="true">Status</th>
+            <th class="th-sm">Quantity(kg)</th>
+            <th class="th-sm"></th>
+        </tr>
+    </thead>
+    <tbody>
+    <% @gbeans.each do |gbean| %>
+        <tr>
+            <th scope="row"><%= gbean.country %></th>
+            <td><%= gbean.bean %></td>
+            <td><%= gbean.process %></td>
+            <td><%= gbean.buy_date %></td>
+            <td><%= gbean.instock %></td>
+            <td class=""><%= gbean.amount %></td>
+            <td><%= link_to 'Edit', edit_stock_path(gbean), class: "btn btn-primary" %></td>
+        </tr>
+    <% end %>
+        
+
+    </tbody>
+    </table>
+<br/>
+
+</div>

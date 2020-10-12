@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bean: MyText
+  amount: 1
+  buy_date: 2020-10-09
+  instock: 
+
+two:
+  bean: MyText
+  amount: 1
+  buy_date: 2020-10-09
+  instock: 

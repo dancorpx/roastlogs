@@ -1,0 +1,15 @@
+<%= simple_form_for(@stock) do |f| %>
+  <%= f.error_notification %>
+  <div class="row">
+    <div class="col-12">
+      <%= f.input :buy_date %>
+      <%= f.select :country, ['Brazil', 'China', 'Colombia', 'Costa Rica', 'Ethiopia', 'Equador', 'Honduras', 'Vietnam', 'India', 'Rwanda'], :prompt => "Origin" %>
+      <%= f.input :bean %>
+      <%= f.select :process, ['Washed', 'Honey', 'Yellow Honey', 'Natural', 'Anaerobic Natural', 'Red Wine'], :prompt => "Process" %>
+      <%= f.input :amount %>
+      <%= f.input :instock, :label => "In Stock?:" %>
+    </div>
+  </div>
+<br>
+  <%= f.button :submit, class: "btn-primary" %>
+<% end %>

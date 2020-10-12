@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :comments
   resources :roasts
   resources :items
+  resources :stocks
   devise_for :users
   # get 'home/index'
   root 'home#index'
