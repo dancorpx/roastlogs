@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_12_063300) do
+ActiveRecord::Schema.define(version: 2020_10_12_065131) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 2020_10_12_063300) do
 
   create_table "stocks", force: :cascade do |t|
     t.text "bean"
-    t.integer "amount"
+    t.float "amount"
     t.date "buy_date"
     t.boolean "instock"
     t.datetime "created_at", null: false
