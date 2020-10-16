@@ -28,7 +28,21 @@
 body {
   font-family: 'raleway', sans-serif;
   background: #F9F9F9;
+  background-color:#2C3532;
 }
+
+/* Assign grid instructions to our parent grid container, mobile-first (hide the sidenav) */
+// .grid-container {
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: 50px 1fr 50px;
+//   grid-template-areas:
+//     'header'
+//     'main'
+//     'footer';
+//   height: 100vh;
+// }
+/* Non-mobile styles, 750px breakpoint */
 
 // devise views
 #devise-jumbo {
@@ -43,4 +57,8 @@ body {
 #devise-logo {
   height: 15vh;
   width: auto;
+}
+
+.footer {
+  display: none;
 }

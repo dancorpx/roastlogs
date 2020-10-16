@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @gbeans = Stock.all
   end
 
   def brewing
