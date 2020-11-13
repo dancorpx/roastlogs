@@ -46,11 +46,37 @@ a .cards {
 }
 
 .overviewcard {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   background-color: #d3d3;
+}
+.overviewcard_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a .overviewcard {
+  text-decoration: none;
+  color: #fff;
+}
+
+.overviewcard_header {
+  font-size: 1.5em;
+  padding-right: 1.5em;
+}
+
+.overview_avatar {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+
+.overviewcard_content {
+  text-align: center;
 }
 
 /* Build the main sectiopn content cards */

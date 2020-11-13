@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-md-3 col-12">
     <%= f.input :date %>
-    <%= f.input :beans %>
+    <%= f.select :beans, ['Brazil', 'China', 'Colombia', 'Costa Rica', 'Ethiopia', 'Ecuador', 'India', 'Honduras', 'Mexico', 'Tanzania', 'Vietnam', 'Uganda', 'Rwanda'], :prompt => "Origin" %>
     <%= f.input :s_weight, :label => "Start Weight:"%>
     <%= f.input :f_weight, :label => "Finish Weight:"%>
     </div>

@@ -7,7 +7,6 @@ def index
 end
 
 def show
-    
     @comments = @roast.comments.all
     @comment = @roast.comments.build
 end
