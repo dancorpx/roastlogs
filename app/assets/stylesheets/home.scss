@@ -28,7 +28,7 @@ a .cards {
 /* The very first element inside of the <main> parent container */
 .main-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
   margin: 20px;
   padding: 20px;
   height: 150px;
@@ -81,7 +81,7 @@ a .overviewcard {
 
 /* Build the main sectiopn content cards */
 .main-cards {
-  column-count: 2;
+  column-count: 1;
   column-gap: 20px;
   margin: 20px;
   

@@ -3,9 +3,9 @@
 </div>  
 
 <main class="main">
+<div class="container mt-3">Hello <%= current_user.email %></div>
   <div class="main-header">
-      <div class="main-header_heading">Hello <%= current_user.email %></div>
-      <div class="main-header_updates">Recent Roasts</div>
+      <div class="main-header_updates"></div>
         <div class="">
             <% @roasts.each do |roast| %>
                 <%= link_to roast_path(roast) do%>
