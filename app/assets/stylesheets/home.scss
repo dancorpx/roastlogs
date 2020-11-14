@@ -5,8 +5,15 @@
 h1 {
   font-weight: bold;
   font-size: 15.5vw;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  // margin-top: 1rem;
+  // margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 535px) {
+  h1 {
+  font-size: 7em;
+  // max-height: 100%;
+  }
 }
 
 body {
@@ -118,3 +125,4 @@ a .overviewcard {
   padding: 0 16px;
   background-color: #648ca6;
 }
+
