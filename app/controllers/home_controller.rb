@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     @gbeans = Stock.all
-    @roasts = Roast.includes(:comments).order("created_at DESC").limit(4)
+    @roasts = Roast.includes(:comments).order("created_at DESC").limit(3)
     @items = Item.order("created_at DESC").limit(4)
   end
 

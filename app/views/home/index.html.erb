@@ -5,15 +5,15 @@
 <main class="main">
 <div class="container mt-3">Hello <%= current_user.email %></div>
   <div class="main-header">
-      <div class="main-header_updates"></div>
-        <div class="">
+      <div class="main-header_updates">
+      <p>Recent Roasts:</p>
             <% @roasts.each do |roast| %>
                 <%= link_to roast_path(roast) do%>
                 <%= roast.date %>
                 <%= roast.beans %><br>
                 <% end %>
             <%end%>
-        </div>
+      </div>
   </div>
   <div class="container"><p>Recent Notes</p></div>
     
@@ -21,42 +21,42 @@
     <% @items.each do |item| %>
         <%= link_to item_path(item) do%>    
             <div class="overviewcard">
-                <div class="overviewcard_top">
+                
                 <% if item.user.avatar %>
                             <%= image_tag "#{item.user.avatar}", class: "overview_avatar" %>
                         <% else %>
-                            <%= image_tag "https://media1.tenor.com/images/ed2ef9bceac44da18c2eb0711df61106/tenor.gif", class: "overview_avatar" %>
+                            <%= image_tag "https://media1.tenor.com/images/ed2ef9bceac44da18c2eb0711df61106/tenor.gif", class: "overview_avatar red" %>
                         <% end %>
-                    <div class="overviewcard_header"><%= truncate(item.title, :length => 15) %></div>
+                        <div class="overviewcard_text red">
+                    <div class="overviewcard_header red"><%= truncate(item.title, :length => 18) %></div>
+                
+                <div class="overviewcard_content red"><%= truncate(item.content, :length => 30) %></div>
                 </div>
-                <div class="overviewcard_content"><%= truncate(item.content, :length => 30) %></div>
             </div>
         <% end %>
     <% end %>
   </div>
   <div class="container">
-  <p>Currently in stock</p></div>
-  <div class="main-cards">
-  <table data-toggle="table" class="table table-striped table-bordered table-sm table-dark" cellspacing="0" width="100%">
-  
-  <thead>
-      <tr>
-          <th class="th-sm">Country</th>  
-          <th class="th-sm">Beans</th>
-          <th class="th-sm">Quantity(kg)</th>
-      </tr>
-  </thead>
-  <tbody>
-  <% @gbeans.each do |gbean| %>
-      <tr>
-          <th scope="row"><%= gbean.country %></th>
-          <td><%= gbean.bean %></td>
-          <td class=""><%= gbean.amount %></td>
-      </tr>
-  <% end %>
-      
-
-  </tbody>
-  </table>
-</div>
+    <p>Currently in stock</p></div>
+    <div class="main-cards">
+        <table data-toggle="table" class="table table-striped table-bordered table-sm table-dark" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th class="th-sm">Country</th>  
+                <th class="th-sm">Beans</th>
+                <th class="th-sm">Quantity(kg)</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% @gbeans.each do |gbean| %>
+            <tr>
+                <th scope="row"><%= gbean.country %></th>
+                <td><%= gbean.bean %></td>
+                <td class=""><%= gbean.amount %></td>
+            </tr>
+        <% end %>
+        </tbody>
+        </table>
+    </div>
+  </div>
 </main>
