@@ -3,9 +3,9 @@
   <div class="row">
     <div class="col-12">
       <%= f.input :buy_date %>
-      <%= f.select :country, ['Brazil', 'China', 'Colombia', 'Costa Rica', 'Ethiopia', 'Ecuador', 'Guatemala', 'Honduras', 'India', 'Kenya', 'Mexico', 'Tanzania', 'Vietnam', 'Uganda', 'Rwanda'], :prompt => "Origin" %>
+      <%= f.select :country, ['Brazil', 'China', 'Colombia', 'Costa Rica', 'Ethiopia', 'Ecuador', 'Guatemala', 'Honduras', 'India', 'Indonesia', 'Kenya', 'Mexico', 'Tanzania', 'Vietnam', 'Uganda', 'Rwanda'], :prompt => "Origin" %>
       <%= f.input :bean %>
-      <%= f.select :process, ['Washed', 'Honey', 'Yellow Honey', 'Black Honey', 'Natural', 'Semi-Natural', 'Anaerobic Natural', 'Red Wine'], :prompt => "Process" %>
+      <%= f.select :process, ['Washed', 'Honey', 'Yellow Honey', 'Black Honey', 'Natural', 'Semi-Natural', 'Anaerobic Natural', 'Red Wine', 'Wet-Hulled'], :prompt => "Process" %>
       <%= f.input :amount %>
       <%= f.input :instock, :label => "In Stock?:" %>
     </div>
