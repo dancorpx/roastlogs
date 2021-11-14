@@ -1,0 +1,117 @@
+<html>
+<body>
+<div class="navbar">
+  <div class="container flex">
+    <h1 class="logo">Roasthub.</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Batches</a></li>
+        <li><a href="#">GreenBeans</a></li>
+        <li><a href="#">Resources</a></li>
+      </ul>
+     
+    </nav>
+    <img class="avatar" src="../../assets/images/shreddedjesus.jpg" alt="avatar">
+  </div>
+</div>
+</body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+  :root {
+    --primary-color: #2C3532;
+  }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.avatar {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+nav {
+  margin-left: 230px;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media(max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+</style>
